@@ -1,0 +1,149 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #333;
+}
+
+section p {
+    margin-bottom: 0.5rem;
+}
+
+section a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Articles */
+article {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+article h3 {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+article p {
+    margin-bottom: 0.5rem;
+}
+
+article a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+aside {
+    padding: 1rem;
+    background: #f4f4f4;
+    border-left: 4px solid #333;
+}
+
+aside h4 {
+    margin-bottom: 1rem;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+aside nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside nav ul li a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+aside nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
