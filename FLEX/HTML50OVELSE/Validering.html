@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!--Manglet html på doctype så la det til, Error-->
+<html lang="nb">
+    <head>  
+        <meta charset=utf-8>
+        <title>Validerings Oppgave</title>
+    </head>
+    <body>
+        <header>
+            <h1>Velkommen til Min Side</h1> <!--Endret fra h2 til h1, Error-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Hjem</a>
+                    <li>
+                        <a href="about.html">Om Meg</a>
+                    <li>
+                        <a href="contact.html">Kontakt</a>
+                </ul>
+            </nav> <!--Endret fra naw til nav skrevet feil, Error-->
+    </header> <!--Lagt til > fordi det manglet, Error-->
+    <main>
+        <section>
+            <article>
+                <h2>HTML Feilene som må fikses</h2> <!--Endret fra h3 til h2, Error-->
+                <p>Dette er et avsnitt som mangler et avsluttende tegn</p>
+                <img src="https://cdn.pixabay.com/photo/2023/07/21/16/23/cat-8141916_960_720.jpg" alt="manglende fnutter">
+            </article>
+        </section>
+
+        <section>
+            <h2>Eksempel Liste</h2>
+            <ol>
+                <li>Punkt en</li>
+                <li>Punkt to</li>
+                <li>Punkt tre</li> <!--la til manglende </Li ende tag>-->
+            </ol>
+        </section>
+        <section>
+            <h2>Form som mangler korrekt struktur</h2>
+            <form action=submit.php method=post>
+                <label for=name>Navn></label>
+                <input type=text id="name" name=name>
+                <input type="submit" value="Send"> <!--endret slik at the ser korrekt ut, Error-->
+            </form>
+        </section>
+    </main>
+        <footer>
+            <p>Kontakt meg på epost: <a href="mailto:epost@domain.com">Epost</a></p> <!--La til manglende fnutter på eposten-->
+            <h3>2024 Marius</h3> <!--Endret fra h1 til h3, Error--> <!--Endret fra copy mitt navn til 2024 Marius, Error-->
+        </footer>
+    </body>
+</html>
