@@ -28,7 +28,42 @@
         <form>
             <label for="navn">navn</label>
             <input type ="text" id="navn" name="navn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
-        
+
+            <label for="email">Epost</label>
+            <input type="email" id="email" required>
+
+            <label for="Passord">Passord</label>
+            <input type="password" id="Passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+
+            <label for="alder">Alder</label>
+            <input type="number" id="alder" min="18" max="99" required>
+
+            <label for="telefonnummer">Telefonnummer</label>
+            <input type="tel" id="telefonnummer" pattern="[0-9]{8,12}" required>
+
+            <label for="fødselsdato">Fødselsdato</label>
+            <input type="date" id="fødselsdato" max="2023-12-31" required>
+
+            <label>Kjønn:</label>
+            <input type="radio" id="mann" name="kjonn" value="Mann" required>
+            <label for="mann">Mann</label>
+            <input type="radio" id="kvinne" name="kjonn" value="Kvinne" required>
+            <label for="kvinne">Kvinne</label>
+            <input type="radio" id="annet" name="kjonn" value="Annet" required>
+            <label for="annet">Annet</label>
+
+            <label for="land">Land:</label>
+            <select id="land" name="land" required>
+                <option value="">Velg et land</option>
+              <option value="Norge">Norge</option>
+              <option value="Sverige">Sverige</option>
+              <option value="Danmark">Danmark</option>
+            </select>
             
-        </form>
+            <label for="personvern">Jeg godtar personvernreglene:</label>
+            <input type="checkbox" id="personvern" name="personvern" required>
+
+            <input type="submit" value="Send inn">
+          </form>
     </main>
+    <footer>Marius Larsen</footer>
