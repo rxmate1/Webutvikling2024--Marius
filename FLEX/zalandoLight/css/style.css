@@ -1,3 +1,11 @@
+html{
+    font-size: 18px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     text-decoration: none;
     color: #000;
@@ -37,6 +45,10 @@ img{
     gap: 1rem;
 }
 
+.flex-space-b h2{
+width: 100%;
+}
+
 .flex-space-b form label{
     position: relative;
 }
@@ -49,3 +61,12 @@ img{
 #outlet{
     color: #ff0000;
 }
+
+.product-card {
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
+  }
