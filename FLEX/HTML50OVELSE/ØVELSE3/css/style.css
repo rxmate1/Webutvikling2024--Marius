@@ -3,6 +3,7 @@ body{
     width: 100%;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 img{
@@ -10,29 +11,37 @@ img{
 }
 
 #main-header {
-    background-image: url("../Bilder/Bruk\ denne.webp");
+    background-image: url("../Bilder/Bruk_denne.webp");
     background-size: cover; 
     background-position: center;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px;
     color: white;
+    text-transform: uppercase;
+    
+}
+
+#main-header a {
+color: white;
+text-decoration: none;
 }
 
 .header1 ul{
     display: flex;
     list-style: none;
-    gap: 10%;
+    gap: 4%;
     flex-wrap: wrap;
     width: 100%;
-
-
 }
 
 .header1 a:hover {
-    color: lightgrey;
+    font-weight: bold;
+    background-color: rgba(248,246,246,0.5);
 }
 
 #footer1 {
+    bottom: 0px;
+    position: absolute;
     background-color:black;
     color: white;
     width: 100%;
@@ -40,29 +49,40 @@ img{
 }
 #footer1 a{
 color: white;
-}
-
+} 
 .main-section {
     max-width: 70%;
     min-width: 400px;
+    flex-wrap: nowrap;
 }
 
-.main-section section { /* Hvordan får jeg de til å horisontalt*/
+.main-section article { 
     box-shadow: 5px 5px 5px;
     min-width: 300px;
     max-width: 400px;
     padding: 2%;
-    flex-wrap: wrap;
 }
 
-.aside-section {
+.section1 {
+    display:flex;
+    flex-basis: 30%;
+
+}
+
+.section2 {
+    flex-basis: 50%;
     width: 30%;
     min-width: 350px;
-    background-color: rgb(23, 45, 171);
-    padding: 2%;
+    background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px;
-    margin: 0 auto;
+    margin: 0;
     max-width: 1200px;
     border: 3px solid #000000;
+    float: right;
 
+}
+
+.section3 {
+    background-color: red;
+    color: red;
 }
