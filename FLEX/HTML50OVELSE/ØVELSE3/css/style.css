@@ -82,7 +82,8 @@ color: white;
 
 }
 
-.section3 {
-    background-color: red;
-    color: red;
+.right {
+    display:flex;
+    align-self: flex-end;
+    margin-left: auto;
 }
