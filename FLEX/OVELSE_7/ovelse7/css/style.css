@@ -1,0 +1,121 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#main-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo {
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+
+header section {
+    text-align: center;
+    padding: 3rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: rgb(166, 172, 172);
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    gap: 2rem;
+}
+
+header nav ul{
+    list-style: none;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0.5rem;
+
+}
+
+
+header nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#energi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:aquamarine;
+    padding: 1rem;
+}
+
+#miljø {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:aquamarine;
+    padding: 1rem;
+}
+
+#gjenbruk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:aquamarine;
+    padding: 1rem;
+}
+
+.btn {
+    display: inline-block; 
+    border: 2px solid black;
+    padding: 1rem 2rem; 
+    background-color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    color: black;
+    border-radius: 4px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.btn:hover {
+    background-color: black;
+    color: white; 
+}
+
+#tjenester {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+section article {
+    box-shadow: 1px 1px 5px;
+    margin: 1rem;
+}
+
+#booking {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    margin: 1rem;
+}
+
+
