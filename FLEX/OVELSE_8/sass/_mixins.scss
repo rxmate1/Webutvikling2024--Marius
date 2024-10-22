@@ -1,0 +1,33 @@
+@mixin box($width, $height, $pad, $bradius){
+    width: 100%;
+    max-width: $width;
+    height: $height;
+    padding: $pad;
+    border-radius: $bradius;
+
+}
+
+@mixin flexbox($direction, $wrap, $gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+
+#headerlogo{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.navmeny{
+    @include flexbox(row, wrap, 0);
+    @include box(100%, auto, 1rem, 0.5rem);
+    position: fixed;
+    justify-content: center; 
+    align-items: center;
+    bottom: 0;
+    width: 100%; 
+    padding: 1rem; 
+}

@@ -1,0 +1,19 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "base" as *;
+@use "layout" as *;
+@use "fonts" as *;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $sekundarFont;
+}
+
+.flex-container-center{
+    display: flex;
+    flex-direction: column;
+}
+
