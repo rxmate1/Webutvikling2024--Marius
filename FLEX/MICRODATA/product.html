@@ -33,41 +33,49 @@
         </nav>
         <main>
             <nav id="breadcrumbs">
-                <ul>
-                    <li>
-                        <a href="index.html"> 
-                            <span>Home /</span>
+                <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">>
+                        <a href="index.html" itemprop="item"> 
+                            <span itemprop="name">Home /</span>
+                            <meta itemprop="position" content="1">
                         </a>
                     </li>
-                    <li>
-                        <a href="index.html">
-                            <span>Running shoes</span> / 
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">>
+                        <a href="index.html" itemprop="item">
+                            <span itemprop="name">Running shoes</span> / 
+                            <meta itemprop="position" content="2">
                         </a>
                     </li>
-                    <li>
-                        <a href="index.html">
-                            <span>Pink runners</span>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">>
+                        <a href="index.html" itemprop="item">
+                            <span itemprop="name">Pink runners</span>
+                            <meta itemprop="position" content="3">
+
                         </a>
                     </li>
                 </ul>
             </nav>
-            <section class="left-content-container flex-items">
-                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" id="active-img">
-                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
-                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
-                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
+            <section class="left-content-container flex-items" itemscope itemtype="https://schema.org/ImageGallery">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" id="active-img" itemprop="primaryImageOfpage">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" itemprop="image">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" itemprop="image">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" itemprop="image">
             </section>
-            <section class="right-content-container flex-items">
+            <section class="right-content-container flex-items" itemscope itemtype="https://schema.org/Product">
                 <header id="product-header">
-                    <h1>Pink runners</h1>
+                    <h1 itemprop="name">Pink runners</h1>
                     <h3 id="brand-name">
-                        <a href="#">Shosies</a>
+                        <a href="#" itemprop="brand">Shosies</a>
                     </h3>
                 </header>
                 <section>
                     <ul>
                         <li>100 anmeldelser</li>
-                        <li>4.4/5</li>
+                        <li itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            4.4/5
+                            <meta itemprop="ratingValue">4.4/5>
+                            <meta itemprop="rating"
+                        </li>
                         <li>Pris: 1499,00 kr</li>
                     </ul>
                 </section>
